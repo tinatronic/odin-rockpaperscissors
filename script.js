@@ -37,14 +37,9 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-// const playerSelection = "Rock";
-// console.log("Player choses: " + playerSelection)
-// const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
-
 function game() {  
 
-    for (i = 0; i <= 5; i++) {
+    for (i = 0; i < 5; i++) {
         playerSelection = prompt("What is your choice ?");
         computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
