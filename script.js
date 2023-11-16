@@ -3,7 +3,6 @@ function getComputerChoice() {
     let options = ['Rock', 'Paper', 'Scissors'];
     let choice = Math.floor(Math.random()*options.length);
 
-    //console.log("Computer choses: " + options[choice])
     return options[choice];
 }
 
@@ -42,3 +41,14 @@ function playRound(playerSelection, computerSelection) {
 // console.log("Player choses: " + playerSelection)
 // const computerSelection = getComputerChoice();
 // console.log(playRound(playerSelection, computerSelection));
+
+function game() {  
+
+    for (i = 0; i <= 5; i++) {
+        playerSelection = prompt("What is your choice ?");
+        computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+    }
+}
+
+game();
